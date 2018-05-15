@@ -10,7 +10,8 @@ have more complex features that'd bloat its size or complexity.
 
 ## Running
 
-Clone out the repo, fire up with Visual Studio 2017, and ideally use ReSharper to run all the tests.
+Clone out the repo, fire up with Visual Studio 2017, and run all the tests.
+When working on the feature don't forget to add Unit Tests and ideally run ReSharper code inspections
 
 ## Deploying
 
