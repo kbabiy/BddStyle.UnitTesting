@@ -127,5 +127,5 @@ when running your tests on different setups (such as alongside each other)
 
 ## Authors
 
-- **Konstantin Babiy** - contributed to the original solution with polishing and improvements
-- **Kirill Medvedev** - former 24-7 Entertainment employee who originally introduced the idea and started the project
+- **Konstantin Babiy** - main contributor and current  owner
+- **Kirill Medvedev** - originally introduced the idea and started the project

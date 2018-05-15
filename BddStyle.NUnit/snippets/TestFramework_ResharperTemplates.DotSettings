@@ -44,7 +44,7 @@ namespace $namespace$&#xD;
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=92ACBB10DBFC074382B3E28210E5D5E7/Field/=act/Order/@EntryValue">4</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/Shortcut/@EntryValue">tfc</s:String>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/Text/@EntryValue">using E247.Common.TestFramework;&#xD;
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/Text/@EntryValue">using BddStyle.NUnit;&#xD;
 &#xD;
 namespace $namespace$&#xD;
 {&#xD;
@@ -143,7 +143,7 @@ namespace $namespace$&#xD;
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=92ACBB10DBFC074382B3E28210E5D5E7/Field/=act/Order/@EntryValue">4</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/Shortcut/@EntryValue">tfc</s:String>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/Text/@EntryValue">using E247.Common.TestFramework;&#xD;
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2B6B6CB46076C44C836C8301B9864F9B/Text/@EntryValue">using BddStyle.NUnit;&#xD;
 &#xD;
 namespace $namespace$&#xD;
 {&#xD;

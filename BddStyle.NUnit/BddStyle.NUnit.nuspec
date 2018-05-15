@@ -1,14 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+﻿<?xml version="1.0"?>
+<package >
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
     <title>$id$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
+    <licenseUrl>https://github.com/kbabiy/BddStyle.NUnit/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$; R# snippets for easier usage are available by the Project URL</description>
-    <projectUrl>http://stash.247ms.com/projects/BK/repos/common/browse/E247.Common.TestFramework/snippets/TestFramework_ResharperTemplates.DotSettings?raw</projectUrl>
-    <copyright>Copyright © 24-7 Entertainment</copyright>
+    <description>$description$; R# snippets for easier usage are available by project URL</description>
+    <projectUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/BddStyle.NUnit/snippets/TestFramework_ResharperTemplates.DotSettings</projectUrl>
+    <tags>NUnit BDD GWT</tags>
   </metadata>
 </package>

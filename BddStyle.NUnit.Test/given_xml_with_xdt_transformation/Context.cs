@@ -12,7 +12,7 @@ namespace BddStyle.NUnit.Test.given_xml_with_xdt_transformation
             doc.LoadXml(TransformedContent);
 
             // ReSharper disable once PossibleNullReferenceException
-            return doc.SelectSingleNode("configuration/E247.Configuration/Nodes/@storage-path").Value;
+            return doc.SelectSingleNode("configuration/BddStyle.Configuration/Nodes/@storage-path").Value;
         }
     }
 }

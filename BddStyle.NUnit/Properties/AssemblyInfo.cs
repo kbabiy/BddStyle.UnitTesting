@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("BddStyle.NUnit")]
-[assembly: AssemblyCopyright("Konstantin Babiy and contributors")]
+[assembly: AssemblyCopyright("")]
 
 [assembly: ComVisible(false)]
 [assembly: Guid("a70fffee-11c0-4978-a2c0-2ea5c948a32b")]
