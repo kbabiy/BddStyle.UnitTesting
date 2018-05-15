@@ -4,8 +4,7 @@
     <id>$id$</id>
     <version>$version$</version>
     <title>$id$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <authors>Konstantin Babiy and contributors</authors>
     <licenseUrl>https://github.com/kbabiy/BddStyle.NUnit/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
