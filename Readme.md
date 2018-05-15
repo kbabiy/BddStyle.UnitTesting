@@ -1,5 +1,4 @@
-﻿
-# BddStyle.NUnit
+﻿# BddStyle.NUnit
 
 Provides set of base classes to structure NUnit-based Unit Tests in the form of BDD tests (Given-When-Then, GWT)
 
