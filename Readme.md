@@ -1,14 +1,14 @@
 ﻿
 # BddStyle.NUnit
 
-Provides set of base classes to structure NUnit-based Unit Tests in the form of BDD tests (Given-When-Then, GWT).
+Provides set of base classes to structure NUnit-based Unit Tests in the form of BDD tests (Given-When-Then, GWT)
 
-This projects gives an approach to solving a few common tasks wi th UT structuring:
+This projects gives an approach to solving a few common tasks with UT structuring:
 
-- Common convention to structure UTs
+- Common structure convention
 - Dealing with overwhelming tests scope
 - Descriptive naming
-- Potential error easy and fast localization
+- Errors easy and fast localization
 - Reusing common setup
 - Following UT best practices, such as one assertion per test
 
@@ -97,7 +97,7 @@ Example of the proposed inheritance model is: **ContextBase** -> given\_descript
 with the methods overriden to specify the setup
 
 - StaticContextBase is an alternative to ContextBase to be used with integration tests only. The differences with ContextBase are
-	- Arrange and Cleanup are called before and after the whole When class tests are run
+	- Arrange and Cleanup are called before and after !all! When class tests are run
 	- Marked with TestKind.Integration by default
 	- Reasoning for using this entity is in the integration testing to save time for heavy setup/teardown
 
