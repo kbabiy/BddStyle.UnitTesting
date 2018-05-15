@@ -1,0 +1,33 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+build:
+  publish_nuget: true
+  include_nuget_references: true
+  verbosity: minimal
+test:
+  categories:
+    only:
+    - Unit
+notifications:
+- provider: Email
+  to:
+  - konstantin.babiy@gmail.com
+  subject: 'FAILURE: bddstyle-nunit build'
+  message: 'FAILURE: bddstyle-nunit build'
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: false
+- provider: Email
+  to:
+  - konstantin.babiy@gmail.com
+  subject: 'SUCCESS: bddstyle-nunit build'
+  message: 'SUCCESS: bddstyle-nunit build'
+  on_build_success: true
+  on_build_failure: false
+  on_build_status_changed: false
