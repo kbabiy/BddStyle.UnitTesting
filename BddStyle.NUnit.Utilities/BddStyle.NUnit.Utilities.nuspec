@@ -3,10 +3,12 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <title>$id$</title>
+    <description>$description$</description>
     <authors>Konstantin Babiy and contributors</authors>
+    
+    <title>$id$</title>
     <licenseUrl>https://github.com/kbabiy/BddStyle.NUnit/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <developmentDependency>true</developmentDependency>
   </metadata>
 </package>
