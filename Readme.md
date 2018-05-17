@@ -124,7 +124,7 @@ when running your tests on different setups (such as alongside each other)
 - [Moq](https://github.com/Moq/moq4/wiki/Quickstart) - convenient mocking framework
 - [NCrunch](http://www.ncrunch.net/) - continuous testing solution for VisualStudio
 
-## Authors
+## Credits
 
 - **Konstantin Babiy** - main contributor and current  owner
 - **Kirill Medvedev** - originally introduced the idea and started the project
