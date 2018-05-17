@@ -6,11 +6,11 @@ so we can discuss the best way to go about it
 ## Purpose
 
 Our aim when making this library was to keep it small, lightweight, and easy to use. We'd rather not 
-have more complex features that'd bloat its size or complexity.
+have more complex features that'd bloat its size or complexity
 
 ## Running
 
-Clone out the repo, fire up with Visual Studio 2017, and run all the tests.
+Clone out the repo, fire up with Visual Studio, and run all the tests
 
 When working on the feature use this checklist:
 * Implemented change
