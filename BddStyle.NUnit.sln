@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddStyle.NUnit.Test", "BddS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddStyle.NUnit.Utilities", "BddStyle.NUnit.Utilities\BddStyle.NUnit.Utilities.csproj", "{4341A370-93D3-4948-802B-C7A5549345C4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{42622096-400F-480B-B4EE-3CB57DEFFA95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".misc", ".misc", "{42622096-400F-480B-B4EE-3CB57DEFFA95}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
