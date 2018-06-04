@@ -1,4 +1,7 @@
-﻿# BddStyle.NUnit
+BddStyle.NUnit
+=============
+[![Build status](https://ci.appveyor.com/api/projects/status/e75x6xqx7180oxtc?svg=true)](https://ci.appveyor.com/project/kbabiy/bddstyle-nunit)
+[![NuGet Version](https://img.shields.io/nuget/v/BddStyle.NUnit.svg?style=flat)](https://www.nuget.org/packages/BddStyle.NUnit/)
 
 Provides set of base classes to structure NUnit-based Unit Tests in the form of BDD tests (Given-When-Then, GWT)
 
