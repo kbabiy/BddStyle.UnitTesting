@@ -1,7 +1,6 @@
 version: 1.2.{build}
 image: Visual Studio 2017
 configuration: Release
-platform: Any CPU
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -20,7 +19,7 @@ before_build:
 build:
   publish_nuget: true
   publish_nuget_symbols: true
-  verbosity: detailed
+  verbosity: minimal
 test:
   categories:
     only:
