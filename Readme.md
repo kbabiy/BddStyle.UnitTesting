@@ -29,7 +29,7 @@ Few links:
 Install-Package BddStyle.NUnit
 ```
 
-- (optional) For your convenience import [Resharper templates](BddStyle.NUnit/snippets/TestFramework_ResharperTemplates.DotSettings) to generate tests faster
+- (optional) For your convenience import [Resharper templates](BddStyle.NUnit/snippets/BddStyle.NUnit.ResharperTemplates) to generate tests faster
 	- ReSharper => Tools => Templates Explorer => Import button
 
 ## Concepts and conventions

@@ -1,11 +1,10 @@
-﻿using NUnit.Framework;
+﻿using System;
 
 // ReSharper disable All
 
-namespace BddStyle.NUnit
+namespace BddStyle.xUnit
 {
-    [TestFixture]
-    public abstract class ContextBaseInternal
+    public abstract class ContextBase : IDisposable
     {
         public virtual void Arrange()
         {
@@ -25,6 +24,17 @@ namespace BddStyle.NUnit
         {
             if (!SuppressAct)
                 Act();
+        }
+
+        public ContextBase()
+        {
+            Arrange();
+            ActInternal();
+        }
+
+        public void Dispose()
+        {
+            Cleanup();
         }
     }
 }

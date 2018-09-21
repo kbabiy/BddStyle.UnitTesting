@@ -15,7 +15,7 @@ namespace BddStyle.NUnit
         [TearDown]
         public void TearDown()
         {
-            CleanupInternal();
+            Cleanup();
         }
     }
 }

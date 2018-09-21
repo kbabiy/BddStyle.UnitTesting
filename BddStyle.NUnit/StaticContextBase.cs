@@ -20,7 +20,7 @@ namespace BddStyle.NUnit
         [TestFixtureTearDown]
         public void FixtureTearDown()
         {
-            CleanupInternal();
+            Cleanup();
         }
     }
 }

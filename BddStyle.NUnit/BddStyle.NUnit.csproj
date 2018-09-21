@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="snippets\TestFramework_ResharperTemplates.DotSettings" />
+    <None Include="snippets\BddStyle.NUnit.DotSettings" />
   </ItemGroup>
   <ItemGroup>
     <None Include="BddStyle.NUnit.nuspec">
