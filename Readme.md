@@ -11,6 +11,7 @@ This projects gives an approach to solving a few common tasks with UT structurin
 - Dealing with overwhelming tests scope
 - Descriptive naming
 - Errors easy and fast localization
+- DRY code
 - Reusing common setup
 - Following UT best practices, such as one assertion per test
 

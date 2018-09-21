@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="given_integration_test\when_loading.cs" />
+    <Compile Include="given_phone_created\and_unlocked\when_calling_empty.cs" />
     <Compile Include="given_phone_created\and_unlocked\when_calling.cs" />
     <Compile Include="given_phone_created\and_unlocked\Context.cs" />
     <Compile Include="given_phone_created\when_unlocking.cs" />
