@@ -6,6 +6,11 @@
     <Authors>Konstantin Babiy and contributors</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Version>9.9.9</Version>
+    <Description>Tooling to empower BDD-style unit testing conventions. R# snippets for easier usage are available by project URL</Description>
+    <PackageLicenseUrl>https://github.com/kbabiy/BddStyle.NUnit/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/BddStyle.xUnit/snippets/BddStyle.xUnit.ResharperTemplates</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/logo.png</PackageIconUrl>
+    <PackageTags>xUnit BDD GWT</PackageTags>
   </PropertyGroup>
 
 </Project>
