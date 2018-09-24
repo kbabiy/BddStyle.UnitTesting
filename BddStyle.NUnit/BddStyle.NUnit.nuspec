@@ -8,7 +8,7 @@
     
     <title>$id$</title>
     <licenseUrl>https://github.com/kbabiy/BddStyle.NUnit/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/BddStyle.NUnit/snippets/BddStyle.NUnit.ResharperTemplates.DotSettings</projectUrl>
+    <projectUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/BddStyle.NUnit/snippets/BddStyle.NUnit.DotSettings</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <developmentDependency>true</developmentDependency>
