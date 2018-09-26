@@ -6,30 +6,25 @@ namespace BddStyle.xUnit
 {
     public abstract class ContextBase : IDisposable
     {
-        public virtual void Arrange()
+        protected virtual void Arrange()
         {
         }
 
-        public virtual void Act()
+        protected virtual void Act()
         {
         }
 
-        public virtual void Cleanup()
+        protected virtual void Cleanup()
         {
         }
 
         protected virtual bool SuppressAct => false;
 
-        internal void ActInternal()
-        {
-            if (!SuppressAct)
-                Act();
-        }
-
         public ContextBase()
         {
             Arrange();
-            ActInternal();
+            if (!SuppressAct)
+                Act();
         }
 
         public void Dispose()
