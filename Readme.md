@@ -5,16 +5,17 @@ BddStyle.NUnit
 
 Provides set of base classes to structure NUnit-based Unit Tests in the form of BDD tests (Given-When-Then, GWT)
 
-This projects gives an approach to solving a few common tasks with UT structuring:
+This projects gives an approach to solving few common tasks to achieve high quality UT code:
 
-- Common structure convention
-- Dealing with overwhelming tests scope
-- Descriptive naming
+- Maintainable
+- DRY and reusable
+- Allowing abstractions
+	- e.g. reusing common setup
+- Concise scope
+- With descriptive naming
 - Errors easy and fast localization
-- DRY code
-- Reusing common setup
-- Following UT best practices, such as one assertion per test
-
+- Isolated: one assertion per test
+	
 Few links:
 
 - [BDD in Wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development)
