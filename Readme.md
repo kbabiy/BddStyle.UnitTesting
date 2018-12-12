@@ -109,14 +109,6 @@ with the methods overriden to specify the setup
 	- Limiting possible category values to set of Kinds enumeration options (Unit, Integration)
 	- Receiving real test kind override behavior (with default being Unit) and nice support in any of the test runners
 
-## BddStyle.NUnit.Utilities
-
-This has some useful utilities, such as AppConfig that allows changing app.config file for the scope of the given test
-
-- Note: this is generally a bad practice to leave a dependency, such as file or app.config, in the tested class in the scope of Unit Test.
-Given utility can be applied as a quick fix or for integration testing, but this will introduce various issues
-when running your tests on different setups (such as alongside each other)
-
 ## Snippets
 
 - **tfc**: create Context

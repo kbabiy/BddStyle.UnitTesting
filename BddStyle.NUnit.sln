@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddStyle.NUnit", "BddStyle.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddStyle.NUnit.Test", "BddStyle.NUnit.Test\BddStyle.NUnit.Test.csproj", "{D351EDA4-B665-4113-ACC8-77E5D0D898E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddStyle.NUnit.Utilities", "BddStyle.NUnit.Utilities\BddStyle.NUnit.Utilities.csproj", "{4341A370-93D3-4948-802B-C7A5549345C4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".misc", ".misc", "{42622096-400F-480B-B4EE-3CB57DEFFA95}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -56,18 +54,6 @@ Global
 		{D351EDA4-B665-4113-ACC8-77E5D0D898E5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D351EDA4-B665-4113-ACC8-77E5D0D898E5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D351EDA4-B665-4113-ACC8-77E5D0D898E5}.Release|x86.ActiveCfg = Release|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Debug|x86.Build.0 = Debug|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Release|x86.ActiveCfg = Release|Any CPU
-		{4341A370-93D3-4948-802B-C7A5549345C4}.Release|x86.Build.0 = Release|Any CPU
 		{484226FF-EBB5-46EE-9A32-9885B25CCDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{484226FF-EBB5-46EE-9A32-9885B25CCDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484226FF-EBB5-46EE-9A32-9885B25CCDFA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -87,7 +73,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D906A190-4CF5-4C11-AA59-5B8D493BD33E} = {CA27850E-5910-4C04-A2BF-5CE1F446B5F6}
 		{D351EDA4-B665-4113-ACC8-77E5D0D898E5} = {CA27850E-5910-4C04-A2BF-5CE1F446B5F6}
-		{4341A370-93D3-4948-802B-C7A5549345C4} = {CA27850E-5910-4C04-A2BF-5CE1F446B5F6}
 		{484226FF-EBB5-46EE-9A32-9885B25CCDFA} = {74C7935C-1505-4998-941F-3065EC4893B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BddStyle.NUnit.Test
+namespace BddStyle.NUnit.Test.given_phone_created
 {
     public class Phone
     {

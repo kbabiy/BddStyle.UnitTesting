@@ -53,48 +53,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="given_integration_test\when_loading.cs" />
     <Compile Include="given_phone_created\and_unlocked\when_calling_empty.cs" />
     <Compile Include="given_phone_created\and_unlocked\when_calling.cs" />
     <Compile Include="given_phone_created\and_unlocked\Context.cs" />
     <Compile Include="given_phone_created\when_unlocking.cs" />
     <Compile Include="given_phone_created\when_calling.cs" />
-    <Compile Include="Phone.cs" />
+    <Compile Include="given_phone_created\Phone.cs" />
     <Compile Include="given_phone_created\Context.cs" />
-    <Compile Include="given_file_in_resources\and_child_namespace\when_reading_resource_in_specified_assembly_into_string.cs" />
-    <Compile Include="given_file_in_resources\when_reading_resource_in_specified_assembly_into_stream.cs" />
-    <Compile Include="given_file_in_resources\when_reading_resource_with_external_caller.cs" />
-    <Compile Include="given_file_in_resources\when_reading_resource_in_specified_assembly_into_string.cs" />
-    <Compile Include="given_file_in_resources\when_reading_unexisting_resource_in_specified_assembly_into_stream.cs" />
-    <Compile Include="given_file_in_resources\when_reading_unexisting_resource_in_specified_assembly_into_string.cs" />
-    <Compile Include="given_file_in_resources\when_searching_for_existing_resource_in_all_loaded_assemblies.cs" />
-    <Compile Include="given_file_in_resources\when_searching_for_unexisting_resource_in_all_loaded_assemblies.cs" />
-    <Compile Include="given_xml_with_xdt_transformation\Context.cs" />
-    <Compile Include="given_xml_with_xdt_transformation\when_applying_transformation.cs" />
-    <Compile Include="given_xml_with_xdt_transformation\when_applying_wrong_transformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BddStyle.NUnit.Utilities\BddStyle.NUnit.Utilities.csproj">
-      <Project>{4341a370-93d3-4948-802b-c7a5549345c4}</Project>
-      <Name>BddStyle.NUnit.Utilities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BddStyle.NUnit\BddStyle.NUnit.csproj">
       <Project>{D906A190-4CF5-4C11-AA59-5B8D493BD33E}</Project>
       <Name>BddStyle.NUnit</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="given_xml_with_xdt_transformation\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="given_file_in_resources\ResourceFile.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="given_xml_with_xdt_transformation\transformations\WrongTransformation.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="given_xml_with_xdt_transformation\transformations\CorrectTransformation.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
