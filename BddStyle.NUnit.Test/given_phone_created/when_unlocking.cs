@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using FluentAssertions;
-using JetBrains.Annotations;
 using NUnit.Framework;
 
 namespace BddStyle.NUnit.Test.given_phone_created
@@ -10,8 +9,7 @@ namespace BddStyle.NUnit.Test.given_phone_created
     {
         protected override bool SuppressAct => true;
 
-        [UsedImplicitly]
-        public static readonly IEnumerable<TestCaseData> ValidPins = new[]
+        private static readonly IEnumerable<TestCaseData> ValidPins = new[]
         {
             new TestCaseData(TestPin).Returns(true).SetName("then phone pin accepted"),
             new TestCaseData(Phone.ServicePin).Returns(true).SetName("then service pin accepted"),
