@@ -7,9 +7,9 @@
     <authors>Konstantin Babiy and contributors</authors>
     
     <title>$id$</title>
-    <licenseUrl>https://github.com/kbabiy/BddStyle.NUnit/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/BddStyle.NUnit/snippets/BddStyle.NUnit.DotSettings</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/logo.png</iconUrl>
+    <licenseUrl>https://github.com/kbabiy/BddStyle.UnitTesting/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.UnitTesting/master/BddStyle.NUnit/snippets/BddStyle.NUnit.DotSettings</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.UnitTesting/master/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <developmentDependency>true</developmentDependency>
     <tags>NUnit BDD GWT</tags>

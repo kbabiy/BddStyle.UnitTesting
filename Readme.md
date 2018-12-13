@@ -1,9 +1,9 @@
-BddStyle.NUnit
+BddStyle.UnitTesting
 =============
 [![Build status](https://ci.appveyor.com/api/projects/status/e75x6xqx7180oxtc?svg=true)](https://ci.appveyor.com/project/kbabiy/bddstyle-nunit)
-[![NuGet Version](https://img.shields.io/nuget/v/BddStyle.NUnit.svg?style=flat)](https://www.nuget.org/packages/BddStyle.NUnit/)
+[![NuGet Version](https://img.shields.io/nuget/v/BddStyle.xUnit.svg?style=flat)](https://www.nuget.org/packages/BddStyle.xUnit/)
 
-Provides set of base classes to structure NUnit-based Unit Tests in the form of BDD tests (Given-When-Then, GWT)
+Provides set of base classes to structure Unit Tests in the BDD shape (Given-When-Then, GWT)
 
 This projects gives an approach to solving few common tasks to achieve high quality UT code:
 
@@ -15,12 +15,16 @@ This projects gives an approach to solving few common tasks to achieve high qual
 - With descriptive naming
 - Errors easy and fast localization
 - Isolated: one assertion per test
+
+Note: this project contains two packages, depending on your UT framework of preference:
+
+- [BddStyle.NUnit](https://www.nuget.org/packages/BddStyle.NUnit/) - used as an example below
+- [BddStyle.xUnit](https://www.nuget.org/packages/BddStyle.xUnit/)
 	
 Few links:
 
 - [BDD in Wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development)
 - [GWT explained on MartinFowler's blog](http://martinfowler.com/bliki/GivenWhenThen.html)
-
 
 ## Installing
 
