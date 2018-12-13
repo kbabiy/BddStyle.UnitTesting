@@ -95,19 +95,9 @@ Example of the proposed inheritance model is: **ContextBase** -> given\_descript
 		Is usually overriden in the Context when such a cleanup is needed
 		- SuppressAct - is a virtual property to allow disabling automatic Act execution (presuming it is going to be manually called in the test body). 
 		It is a solution to improve data-driven tests (aka TestCase in NUnit) implementation
-	- Marked with TestKind.Unit by default
 
 - As it can see from the example, nested Given is supported within the approach by creating nested folder (and Context class) 
 with the methods overriden to specify the setup
-
-- StaticContextBase is an alternative to ContextBase to be used with integration tests only. The differences with ContextBase are
-	- Arrange and Cleanup are called before and after !all! When class tests are run
-	- Marked with TestKind.Integration by default
-	- Reasoning for using this entity is in the integration testing to save time for heavy setup/teardown
-
-- TestKindAttribute inherits from NUnit.Framework.CategoryAttribute and redefines AllowMultiple to false. This attribute usage allows
-	- Limiting possible category values to set of Kinds enumeration options (Unit, Integration)
-	- Receiving real test kind override behavior (with default being Unit) and nice support in any of the test runners
 
 ## Snippets
 

@@ -45,9 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContextBaseInternal.cs" />
-    <Compile Include="Kinds.cs" />
-    <Compile Include="TestKindAttribute.cs" />
-    <Compile Include="StaticContextBase.cs" />
     <Compile Include="ContextBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

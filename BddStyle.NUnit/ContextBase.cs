@@ -2,7 +2,6 @@
 
 namespace BddStyle.NUnit
 {
-    [TestKind(Kinds.Unit)]
     public abstract class ContextBase : ContextBaseInternal
     {
         [SetUp]
