@@ -5,7 +5,7 @@ namespace BddStyle.NUnit.Test.given_phone_created.and_unlocked
 {
     public class when_calling : Context
     {
-        public override void Act()
+        protected override void Act()
         {
             Sut.Call(TestPhoneNumber);
         }

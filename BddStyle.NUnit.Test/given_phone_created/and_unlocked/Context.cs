@@ -2,7 +2,7 @@
 {
     public abstract class Context : given_phone_created.Context
     {
-        public override void Arrange()
+        protected override void Arrange()
         {
             base.Arrange();
             Sut.Unlock(TestPin);

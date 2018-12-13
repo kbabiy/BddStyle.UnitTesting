@@ -2,13 +2,29 @@
 
 namespace BddStyle.NUnit
 {
-    public abstract class ContextBase : ContextBaseInternal
+    [TestFixture]
+    public abstract class ContextBase
     {
+        protected virtual void Arrange()
+        {
+        }
+
+        protected virtual void Act()
+        {
+        }
+
+        protected virtual void Cleanup()
+        {
+        }
+
+        protected virtual bool SuppressAct => false;
+
         [SetUp]
         public void SetUp()
         {
             Arrange();
-            ActInternal();
+            if (!SuppressAct)
+                Act();
         }
 
         [TearDown]

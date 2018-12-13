@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContextBaseInternal.cs" />
     <Compile Include="ContextBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

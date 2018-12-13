@@ -9,7 +9,7 @@ namespace BddStyle.NUnit.Test.given_phone_created
         protected const string TestPhoneNumber = "321-123-12";
         protected string TestPin = "3365";
 
-        public override void Arrange()
+        protected override void Arrange()
         {
             Sut = new Phone(TestPin);
         }

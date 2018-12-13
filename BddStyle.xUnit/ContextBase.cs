@@ -1,6 +1,5 @@
 ﻿using System;
-
-// ReSharper disable All
+using System.Diagnostics.CodeAnalysis;
 
 namespace BddStyle.xUnit
 {
@@ -20,7 +19,8 @@ namespace BddStyle.xUnit
 
         protected virtual bool SuppressAct => false;
 
-        public ContextBase()
+        [SuppressMessage("ReSharper", "VirtualMemberCallInConstructor")]
+        protected ContextBase()
         {
             Arrange();
             if (!SuppressAct)
