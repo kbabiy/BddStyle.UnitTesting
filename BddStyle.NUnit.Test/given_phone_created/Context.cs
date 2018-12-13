@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace BddStyle.NUnit.Test.given_phone_created
+﻿namespace BddStyle.NUnit.Test.given_phone_created
 {
-    [SuppressMessage("ReSharper", "UnassignedField.Global")]
     public abstract class  Context : ContextBase
     {
         protected Phone Sut;
