@@ -91,9 +91,9 @@ Example of the proposed inheritance model is: **ContextBase** -> given\_descript
 
 - ContextBase - an entity provided by this library being the root entity and providing methods to override
 	- Members
-		- Arrange - is called before each testcase execution to set up the preconditions. 
+		- Arrange(Async) - is called before each testcase execution to set up the preconditions. 
 		Is usually overriden in the Context (being the contents of the Given setup)
-		- Act - contains the testcase actions to perform. 
+		- Act(Async) - contains the testcase actions to perform. 
 		Is usually overriden in the When class
 		- Cleanup - is called after each testcase execution to cleanup the test consequences. 
 		Is usually overriden in the Context when such a cleanup is needed
