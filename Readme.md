@@ -105,9 +105,9 @@ with the methods overriden to specify the setup
 
 ## Snippets
 
-- **tfc**: create Context
-- **tfu**: create When class
-- **tft**: create Then method (test in the When class)
+- **bdc**: create Context
+- **bdu**: create When class
+- **bdt**: create Then method (test in the When class)
 
 ## Additional useful packages and tooling to consider for improving your UT experience
 
