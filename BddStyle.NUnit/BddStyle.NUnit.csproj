@@ -8,4 +8,8 @@
     <PackageReference Include="NUnit" Version="3.11.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BddStyle.Common\BddStyle.Common.csproj" />
+  </ItemGroup>
+
 </Project>

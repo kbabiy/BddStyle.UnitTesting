@@ -13,4 +13,8 @@
     <PackageTags>xUnit BDD GWT</PackageTags>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BddStyle.Common\BddStyle.Common.csproj" />
+  </ItemGroup>
+
 </Project>
