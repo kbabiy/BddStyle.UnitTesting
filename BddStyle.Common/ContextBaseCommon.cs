@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 
 [assembly: InternalsVisibleTo("BddStyle.NUnit")]
 [assembly: InternalsVisibleTo("BddStyle.xUnit")]
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
 
 namespace BddStyle.Common
 {
