@@ -26,8 +26,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BddStyle.NUnit.Test", "BddS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddStyle.Common", "BddStyle.Common\BddStyle.Common.csproj", "{7F3C1663-BABF-4BE8-89E6-AC06DE09242C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddStyle.Common.Test", "BddStyle.Common.Test\BddStyle.Common.Test.csproj", "{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,18 +84,6 @@ Global
 		{7F3C1663-BABF-4BE8-89E6-AC06DE09242C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7F3C1663-BABF-4BE8-89E6-AC06DE09242C}.Release|x86.ActiveCfg = Release|Any CPU
 		{7F3C1663-BABF-4BE8-89E6-AC06DE09242C}.Release|x86.Build.0 = Release|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Debug|x86.Build.0 = Debug|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Release|x86.ActiveCfg = Release|Any CPU
-		{0C2C94A0-3498-4B7F-8199-C1D2D0685F8D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
