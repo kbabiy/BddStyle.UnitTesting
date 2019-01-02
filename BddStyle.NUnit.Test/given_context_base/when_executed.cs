@@ -9,7 +9,7 @@ namespace BddStyle.NUnit.Test.given_context_base
         public void then_calls_are_as_expected()
         {
             Calls.Should().BeEquivalentTo(
-                "Arrange", "ArrangeAsync", "Act", "ActAsync");
+                nameof(Arrange), nameof(ArrangeAsync), nameof(Act), nameof(ActAsync));
         }
     }
 }

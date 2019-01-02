@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace BddStyle.NUnit
 {
     [TestFixture]
-    public abstract class ContextBase : ContextBaseCommon
+    public abstract class ContextBase : InternalContextBase
     {
         [SetUp]
         public void SetUp()

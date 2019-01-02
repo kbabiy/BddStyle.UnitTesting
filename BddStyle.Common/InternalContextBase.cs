@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BddStyle.Common
 {
-    public class ContextBaseCommon
+    public class InternalContextBase
     {
         protected virtual bool SuppressAct => false;
 

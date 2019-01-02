@@ -4,7 +4,7 @@ using BddStyle.Common;
 
 namespace BddStyle.xUnit
 {
-    public abstract class ContextBase : ContextBaseCommon, IDisposable
+    public abstract class ContextBase : InternalContextBase, IDisposable
     {
         [SuppressMessage("ReSharper", "VirtualMemberCallInConstructor")]
         protected ContextBase()
