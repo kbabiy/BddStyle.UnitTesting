@@ -2,6 +2,7 @@
 {
     public abstract class Context : given_context_base.Context
     {
-        protected override bool SuppressAct => true;
+        protected bool ShouldSuppressAct = true;
+        protected override bool SuppressAct => ShouldSuppressAct;
     }
 }
