@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>9.9.9</Version>
+    <Authors>Konstantin Babiy and contributors</Authors>
+    <Company>none</Company>
+    <Description>Tooling to empower BDD-style unit testing conventions. R# snippets for easier usage are available by project URL</Description>
+    <PackageLicenseUrl>https://github.com/kbabiy/BddStyle.NUnit/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/BddStyle.NUnit/snippets/BddStyle.xUnit.ResharperTemplates.DotSettings</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/kbabiy/BddStyle.NUnit/master/logo.png</PackageIconUrl>
+    <PackageTags>NUnit BDD GWT</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
