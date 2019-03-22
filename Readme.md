@@ -1,7 +1,7 @@
 BddStyle.UnitTesting
 =============
 [![Build status](https://ci.appveyor.com/api/projects/status/e75x6xqx7180oxtc?svg=true)](https://ci.appveyor.com/project/kbabiy/bddstyle-nunit)
-[![NuGet Version](https://img.shields.io/nuget/v/BddStyle.xUnit.svg?style=flat)](https://www.nuget.org/packages/BddStyle.xUnit/)
+[![NuGet Version](https://img.shields.io/nuget/v/BddStyle.nUnit.svg?style=flat)](https://www.nuget.org/packages/BddStyle.nUnit/)
 
 Provides set of base classes to structure Unit Tests in the BDD shape (Given-When-Then, GWT)
 
@@ -42,7 +42,7 @@ Install-Package BddStyle.NUnit
 - Tests are structured like: **Given —< When —< Then**
 	- Note that it is one-to-many ( —< ) relationship between the components
 - It can be read as: Given [initial context], When [event occurs], Then [ensure some outcomes] 
-	- **Given** section describes the state of the world before you begin the test case in this scenario. 
+	- **Given** section describes the state of the world before you begin the test case in this scenario
 	Can be thought of as the pre-conditions to the test
 		- is represented by a folder in the solution structure
 		- usually (optionally) contains Context class, which is a place to write the test setup
