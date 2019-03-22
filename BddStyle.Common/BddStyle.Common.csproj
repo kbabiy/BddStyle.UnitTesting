@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <IsPackable>false</IsPackable>
+    <IsPackable>true</IsPackable>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Konstantin Babiy and contributors</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
