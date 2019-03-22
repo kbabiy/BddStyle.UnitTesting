@@ -6,6 +6,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
   <files>
+    <file src="bin\Release\*.dll" target="lib" />
     <file src="bin\Debug\*.dll" target="lib" />
   </files>
 </package>
