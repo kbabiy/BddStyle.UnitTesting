@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <IsPackable>true</IsPackable>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Company>none</Company>
     <Authors>Konstantin Babiy and contributors</Authors>
@@ -14,7 +15,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BddStyle.Common\BddStyle.Common.csproj" />
+    <ProjectReference Include="..\BddStyle.Common\BddStyle.Common.csproj">
+      <Private>true</Private>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>
