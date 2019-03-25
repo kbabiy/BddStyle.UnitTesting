@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BddStyle.Common\BddStyle.Common.csproj" />
+    <Compile Include="..\BddStyle.Common\InternalContextBase.cs" Link="InternalContextBase.cs" />
   </ItemGroup>
   
 </Project>

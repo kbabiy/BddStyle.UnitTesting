@@ -1,4 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Runtime.CompilerServices;
+using System.Threading;
 using System.Threading.Tasks;
 
 [assembly: InternalsVisibleTo("BddStyle.NUnit")]
@@ -40,6 +42,23 @@ namespace BddStyle.Common
 
             Act();
             AsyncHelper.RunSync(ActAsync);
+        }
+
+        
+        private static class AsyncHelper
+        {
+            private static readonly TaskFactory TaskFactory = new
+                TaskFactory(CancellationToken.None,
+                    TaskCreationOptions.None,
+                    TaskContinuationOptions.None,
+                    TaskScheduler.Default);
+
+            internal static void RunSync(Func<Task> func)
+                => TaskFactory
+                    .StartNew(func)
+                    .Unwrap()
+                    .GetAwaiter()
+                    .GetResult();
         }
     }
 }

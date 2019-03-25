@@ -14,11 +14,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.11.0" />
+    <Compile Include="..\BddStyle.Common\InternalContextBase.cs" Link="InternalContextBase.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BddStyle.Common\BddStyle.Common.csproj" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
   </ItemGroup>
       
 </Project>
