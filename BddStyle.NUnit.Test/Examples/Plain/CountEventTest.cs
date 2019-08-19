@@ -4,30 +4,30 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples
+namespace BddStyle.NUnit.Test.Examples.Plain
 {
     [TestFixture]
     public class CountEventTest
     {
         private const int ThreadCount = 100;
-        private CountEvent Sut;
+        private CountEvent _sut;
 
         [SetUp]
         public void Setup()
         {
-            Sut = new CountEvent();
+            _sut = new CountEvent();
         }
 
         private Task[] StartIncreases()
         {
             return Enumerable.Range(0, ThreadCount).Select(
-                i => Task.Factory.StartNew(Sut.Increase)).ToArray();
+                i => Task.Factory.StartNew(_sut.Increase)).ToArray();
         }
 
         private Task[] StartDecreases()
         {
             return Enumerable.Range(0, ThreadCount).Select(
-                i => Task.Factory.StartNew(Sut.Decrease)).ToArray();
+                i => Task.Factory.StartNew(_sut.Decrease)).ToArray();
         }
 
         protected T Timed<T>(TimeSpan frame, Func<T> action)
@@ -46,16 +46,16 @@ namespace BddStyle.NUnit.Test.Examples
             //Arrange
             var increases = StartIncreases();
             Task.WaitAll(increases, TimeSpan.FromSeconds(10));
-            var countAfterAdding = Sut.Count;
+            var countAfterAdding = _sut.Count;
             StartDecreases();
 
             //Act
-            var decreaseWaitSuccess = Sut.WaitUntil(0, TimeSpan.FromSeconds(10));
+            var decreaseWaitSuccess = _sut.WaitUntil(0, TimeSpan.FromSeconds(10));
 
             //Assert
             countAfterAdding.Should().Be(ThreadCount);
             decreaseWaitSuccess.Should().BeTrue();
-            Sut.Count.Should().Be(0);
+            _sut.Count.Should().Be(0);
         }
     }
 }
