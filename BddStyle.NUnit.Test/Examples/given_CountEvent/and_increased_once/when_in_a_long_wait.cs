@@ -3,9 +3,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.given_CountEvent.and_increased
+namespace BddStyle.NUnit.Test.Examples.given_CountEvent.and_increased_once
 {
-    public class when_waiting : Context
+    public class when_in_a_long_wait : Context
     {
         protected override void Act()
         {
