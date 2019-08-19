@@ -21,7 +21,7 @@ namespace BddStyle.NUnit.Test.given_phone_created
 
         public bool Unlock(string pinCode)
         {
-            if(string.IsNullOrEmpty(pinCode))
+            if (string.IsNullOrEmpty(pinCode))
                 throw new ArgumentNullException();
 
             if (pinCode == _pinCode || pinCode == ServicePin)
