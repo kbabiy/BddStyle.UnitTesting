@@ -1,4 +1,4 @@
-﻿namespace BddStyle.NUnit.Test.CountEvent.given_CountEvent.and_increased
+﻿namespace BddStyle.NUnit.Test.Examples.given_CountEvent.and_increased
 {
     public class Context : given_CountEvent.Context
     {

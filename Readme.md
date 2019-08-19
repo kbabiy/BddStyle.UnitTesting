@@ -83,7 +83,7 @@ Troubleshooting and error localization:
 
 ### Code
 
-[Example source codes](BddStyle.NUnit.Test/given_phone_created)
+[Example source codes](BddStyle.NUnit.Test/Examples)
 
 ## Classes, inheritance model
 

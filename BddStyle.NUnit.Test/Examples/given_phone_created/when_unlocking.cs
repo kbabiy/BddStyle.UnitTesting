@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.given_phone_created
+namespace BddStyle.NUnit.Test.Examples.given_phone_created
 {
     public class when_unlocking : Context
     {

@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FluentAssertions;
 
-namespace BddStyle.NUnit.Test.CountEvent.given_CountEvent
+namespace BddStyle.NUnit.Test.Examples.given_CountEvent
 {
     public abstract class Context : ContextBase
     {

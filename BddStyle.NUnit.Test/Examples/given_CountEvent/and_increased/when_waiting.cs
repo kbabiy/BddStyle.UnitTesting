@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.CountEvent.given_CountEvent.and_increased
+namespace BddStyle.NUnit.Test.Examples.given_CountEvent.and_increased
 {
     public class when_waiting : Context
     {

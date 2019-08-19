@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.CountEvent.given_CountEvent
+namespace BddStyle.NUnit.Test.Examples.given_CountEvent
 {
     public class when_decreasing_below_zero : Context
     {

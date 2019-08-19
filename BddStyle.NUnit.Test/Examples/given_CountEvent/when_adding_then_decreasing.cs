@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.CountEvent.given_CountEvent
+namespace BddStyle.NUnit.Test.Examples.given_CountEvent
 {
     public class when_adding_then_decreasing : Context
     {

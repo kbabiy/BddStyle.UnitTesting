@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.CountEvent
+namespace BddStyle.NUnit.Test.Examples
 {
     [TestFixture]
     public class CountEventTest

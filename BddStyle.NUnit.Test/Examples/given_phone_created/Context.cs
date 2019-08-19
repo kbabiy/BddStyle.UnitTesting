@@ -1,4 +1,4 @@
-﻿namespace BddStyle.NUnit.Test.given_phone_created
+﻿namespace BddStyle.NUnit.Test.Examples.given_phone_created
 {
     public abstract class Context : ContextBase
     {

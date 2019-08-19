@@ -1,4 +1,4 @@
-﻿namespace BddStyle.NUnit.Test.given_phone_created.and_unlocked
+﻿namespace BddStyle.NUnit.Test.Examples.given_phone_created.and_unlocked
 {
     public abstract class Context : given_phone_created.Context
     {
