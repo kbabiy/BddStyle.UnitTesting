@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BddStyle.Common
 {
-    public class InternalContextBase
+    public abstract class InternalContextBase
     {
         protected virtual bool SuppressAct => false;
 
