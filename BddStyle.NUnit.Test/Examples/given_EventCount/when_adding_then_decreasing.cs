@@ -22,13 +22,13 @@ namespace BddStyle.NUnit.Test.Examples.given_EventCount
         }
 
         [Test]
-        public void then_after_adding_count_is_correct()
+        public void then_added_all()
         {
             _countAfterAdding.Should().Be(ThreadCount);
         }
 
         [Test]
-        public void then_decrease_wait_is_successful()
+        public void then_waited_for_decrease_successfully()
         {
             _decreaseWaitSuccess.Should().BeTrue();
         }
