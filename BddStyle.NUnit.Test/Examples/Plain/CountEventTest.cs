@@ -10,13 +10,7 @@ namespace BddStyle.NUnit.Test.Examples.Plain
     public class CountEventTest
     {
         private const int ThreadCount = 100;
-        private CountEvent _sut;
-
-        [SetUp]
-        public void Setup()
-        {
-            _sut = new CountEvent();
-        }
+        private EventCount _sut;
 
         private Task[] StartIncreases()
         {
@@ -40,6 +34,12 @@ namespace BddStyle.NUnit.Test.Examples.Plain
             return result;
         }
 
+        [SetUp]
+        public void Setup()
+        {
+            _sut = new EventCount();
+        }
+
         [Test]
         public void CountEvent_AddingThenDecreasing_CountIs0()
         {
@@ -56,6 +56,24 @@ namespace BddStyle.NUnit.Test.Examples.Plain
             countAfterAdding.Should().Be(ThreadCount);
             decreaseWaitSuccess.Should().BeTrue();
             _sut.Count.Should().Be(0);
+        }
+
+        [Test]
+        public void CountEvent_ChangingInParallel_WaitIsSuccessful()
+        {
+
+        }
+
+
+
+
+
+        [Test]
+        public void CountEvent_AddingAndDecreasingOftenOnAlreadyIncreased_ReturnsFalseByTimeout()
+        {
+            //Arrange
+            _sut.Increase();
+
         }
     }
 }

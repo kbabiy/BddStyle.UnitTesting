@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.given_CountEvent.and_increased_once
+namespace BddStyle.NUnit.Test.Examples.given_EventCount.and_increased_once
 {
     public class when_in_a_long_wait : Context
     {

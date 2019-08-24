@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.given_CountEvent.and_increased_once
+namespace BddStyle.NUnit.Test.Examples.given_EventCount.and_increased_once
 {
     public class when_waiting_for_0 : Context
     {

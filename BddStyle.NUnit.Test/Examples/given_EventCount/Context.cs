@@ -1,17 +1,18 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using FluentAssertions;
 
-namespace BddStyle.NUnit.Test.Examples.given_CountEvent
+namespace BddStyle.NUnit.Test.Examples.given_EventCount
 {
     public abstract class Context : ContextBase
     {
         protected const int ThreadCount = 100;
-        protected CountEvent Sut;
+        protected EventCount Sut;
         protected override void Arrange()
         {
-            Sut = new CountEvent();
+            Sut = new EventCount();
         }
         
         protected Task[] StartIncreases()
@@ -20,6 +21,7 @@ namespace BddStyle.NUnit.Test.Examples.given_CountEvent
                 i => Task.Factory.StartNew(Sut.Increase)).ToArray();
         }       
         
+        [SuppressMessage("ReSharper", "UnusedMethodReturnValue.Global")]
         protected Task[] StartDecreases()
         {
             return Enumerable.Range(0, ThreadCount).Select(

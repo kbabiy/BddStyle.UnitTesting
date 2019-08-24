@@ -7,7 +7,7 @@ namespace BddStyle.NUnit.Test.Examples
     /// <summary>
     /// Registers Increase and Decrease call counts and allows waiting the count to reach 0 
     /// </summary>
-    public class CountEvent
+    public class EventCount
     {
         private readonly object _counterChangeLock = new object();
         private int _counter;

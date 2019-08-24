@@ -3,7 +3,7 @@ using System.Threading;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.given_CountEvent
+namespace BddStyle.NUnit.Test.Examples.given_EventCount
 {
     public class when_changing_in_parallel : Context
     {
