@@ -17,5 +17,9 @@
   <ItemGroup>
     <Compile Include="..\BddStyle.Common\InternalContextBase.cs" Link="InternalContextBase.cs" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
+  </ItemGroup>
   
 </Project>

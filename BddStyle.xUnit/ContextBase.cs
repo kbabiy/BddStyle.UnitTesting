@@ -2,19 +2,20 @@
 using System.Diagnostics.CodeAnalysis;
 using BddStyle.Common;
 
-namespace BddStyle.xUnit
-{
-    public abstract class ContextBase : InternalContextBase, IDisposable
-    {
-        [SuppressMessage("ReSharper", "VirtualMemberCallInConstructor")]
-        protected ContextBase()
-        {
-            ArrangeAndAct();
-        }
+namespace BddStyle.xUnit;
 
-        public void Dispose()
-        {
-            Cleanup();
-        }
+[JetBrains.Annotations.UsedImplicitly]
+public abstract class ContextBase : InternalContextBase, IDisposable
+{
+    [SuppressMessage("ReSharper", "VirtualMemberCallInConstructor")]
+    protected ContextBase()
+    {
+        ArrangeAndAct();
+    }
+
+    [SuppressMessage("Usage", "CA1816:Dispose methods should call SuppressFinalize")]
+    public void Dispose()
+    {
+        Cleanup();
     }
 }

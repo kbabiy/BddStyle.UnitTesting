@@ -1,41 +1,40 @@
 ﻿using System;
 
-namespace BddStyle.NUnit.Test.Examples.given_phone_created
+namespace BddStyle.NUnit.Test.Examples.given_phone_created;
+
+public class Phone
 {
-    public class Phone
+    internal const string ServicePin = "911";
+
+    private bool _unlocked;
+    private readonly string _pinCode;
+
+    public Phone(string pinCode)
     {
-        internal const string ServicePin = "911";
+        if (string.IsNullOrEmpty(pinCode))
+            throw new ArgumentNullException(nameof(pinCode));
+        _pinCode = pinCode;
+    }
 
-        private bool _unlocked;
-        private readonly string _pinCode;
+    public bool LastCallSucceeded { get; private set; }
+    public string LastCalled { get; private set; }
 
-        public Phone(string pinCode)
-        {
-            if (string.IsNullOrEmpty(pinCode))
-                throw new ArgumentNullException(nameof(pinCode));
-            _pinCode = pinCode;
-        }
+    public bool Unlock(string pinCode)
+    {
+        if (string.IsNullOrEmpty(pinCode))
+            throw new ArgumentNullException(nameof(pinCode));
 
-        public bool LastCallSucceeded { get; private set; }
-        public string LastCalled { get; private set; }
+        if (pinCode == _pinCode || pinCode == ServicePin)
+            _unlocked = true;
+        return _unlocked;
+    }
 
-        public bool Unlock(string pinCode)
-        {
-            if (string.IsNullOrEmpty(pinCode))
-                throw new ArgumentNullException();
+    public void Call(string phoneNumber)
+    {
+        if (string.IsNullOrEmpty(phoneNumber))
+            throw new ArgumentNullException(nameof(phoneNumber));
 
-            if (pinCode == _pinCode || pinCode == ServicePin)
-                _unlocked = true;
-            return _unlocked;
-        }
-
-        public void Call(string phoneNumber)
-        {
-            if (string.IsNullOrEmpty(phoneNumber))
-                throw new ArgumentNullException();
-
-            LastCalled = phoneNumber;
-            LastCallSucceeded = _unlocked;
-        }
+        LastCalled = phoneNumber;
+        LastCallSucceeded = _unlocked;
     }
 }
