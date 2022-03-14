@@ -2,42 +2,41 @@
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
-namespace BddStyle.NUnit.Test.given_context_base
+namespace BddStyle.NUnit.Test.given_context_base;
+
+public abstract class Context : ContextBase
 {
-    public abstract class Context : ContextBase
+    protected readonly List<string> Calls = new();
+
+    private void RegisterCall([CallerMemberName] string callerName = "none")
     {
-        protected readonly List<string> Calls = new();
+        Calls.Add(callerName);
+    }
 
-        private void RegisterCall([CallerMemberName] string callerName = "none")
-        {
-            Calls.Add(callerName);
-        }
+    protected override void Arrange()
+    {
+        RegisterCall();
+    }
 
-        protected override void Arrange()
-        {
-            RegisterCall();
-        }
+    protected override Task ArrangeAsync()
+    {
+        RegisterCall();
+        return Task.CompletedTask;
+    }
 
-        protected override Task ArrangeAsync()
-        {
-            RegisterCall();
-            return Task.CompletedTask;
-        }
+    protected override void Act()
+    {
+        RegisterCall();
+    }
 
-        protected override void Act()
-        {
-            RegisterCall();
-        }
+    protected override Task ActAsync()
+    {
+        RegisterCall();
+        return Task.CompletedTask;
+    }
 
-        protected override Task ActAsync()
-        {
-            RegisterCall();
-            return Task.CompletedTask;
-        }
-
-        protected override void Cleanup()
-        {
-            RegisterCall();
-        }
+    protected override void Cleanup()
+    {
+        RegisterCall();
     }
 }
