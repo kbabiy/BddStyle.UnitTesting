@@ -4,7 +4,6 @@
     <IsPackable>false</IsPackable>
     <TargetFramework>net6.0</TargetFramework>
     <Authors>Konstantin Babiy and contributors</Authors>
-    <Version>10.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
