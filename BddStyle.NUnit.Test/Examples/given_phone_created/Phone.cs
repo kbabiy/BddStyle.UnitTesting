@@ -1,40 +1,41 @@
 ﻿using System;
 
-namespace BddStyle.NUnit.Test.Examples.given_phone_created;
-
-public class Phone
+namespace BddStyle.NUnit.Test.Examples.given_phone_created
 {
-    internal const string ServicePin = "911";
-
-    private bool _unlocked;
-    private readonly string _pinCode;
-
-    public Phone(string pinCode)
+    public class Phone
     {
-        if (string.IsNullOrEmpty(pinCode))
-            throw new ArgumentNullException(nameof(pinCode));
-        _pinCode = pinCode;
-    }
+        internal const string ServicePin = "911";
 
-    public bool LastCallSucceeded { get; private set; }
-    public string LastCalled { get; private set; }
+        private bool _unlocked;
+        private readonly string _pinCode;
 
-    public bool Unlock(string pinCode)
-    {
-        if (string.IsNullOrEmpty(pinCode))
-            throw new ArgumentNullException(nameof(pinCode));
+        public Phone(string pinCode)
+        {
+            if (string.IsNullOrEmpty(pinCode))
+                throw new ArgumentNullException(nameof(pinCode));
+            _pinCode = pinCode;
+        }
 
-        if (pinCode == _pinCode || pinCode == ServicePin)
-            _unlocked = true;
-        return _unlocked;
-    }
+        public bool LastCallSucceeded { get; private set; }
+        public string LastCalled { get; private set; }
 
-    public void Call(string phoneNumber)
-    {
-        if (string.IsNullOrEmpty(phoneNumber))
-            throw new ArgumentNullException(nameof(phoneNumber));
+        public bool Unlock(string pinCode)
+        {
+            if (string.IsNullOrEmpty(pinCode))
+                throw new ArgumentNullException(nameof(pinCode));
 
-        LastCalled = phoneNumber;
-        LastCallSucceeded = _unlocked;
+            if (pinCode == _pinCode || pinCode == ServicePin)
+                _unlocked = true;
+            return _unlocked;
+        }
+
+        public void Call(string phoneNumber)
+        {
+            if (string.IsNullOrEmpty(phoneNumber))
+                throw new ArgumentNullException(nameof(phoneNumber));
+
+            LastCalled = phoneNumber;
+            LastCallSucceeded = _unlocked;
+        }
     }
 }

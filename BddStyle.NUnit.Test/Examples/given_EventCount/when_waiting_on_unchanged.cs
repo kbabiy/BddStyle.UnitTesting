@@ -2,15 +2,16 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.given_EventCount;
-
-public class when_waiting_on_unchanged : Context
+namespace BddStyle.NUnit.Test.Examples.given_EventCount
 {
-    [Test]
-    public void then_returns_success_immediately()
+    public class when_waiting_on_unchanged : Context
     {
-        Timed(TimeSpan.FromMilliseconds(100),
-                () => Sut.WaitUntil(0, TimeSpan.FromSeconds(10)))
-            .Should().BeTrue();
+        [Test]
+        public void then_returns_success_immediately()
+        {
+            Timed(TimeSpan.FromMilliseconds(100),
+                    () => Sut.WaitUntil(0, TimeSpan.FromSeconds(10)))
+                .Should().BeTrue();
+        }
     }
 }

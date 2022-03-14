@@ -1,9 +1,11 @@
-﻿namespace BddStyle.NUnit.Test.Examples.Model.given_my_tested_class;
-
-public abstract class Context : ContextBase
+﻿namespace BddStyle.NUnit.Test.Examples.Model.given_my_tested_class
 {
-    protected override void Arrange()
+
+    public abstract class Context : ContextBase
     {
-        base.Arrange();
+        protected override void Arrange()
+        {
+            base.Arrange();
+        }
     }
 }

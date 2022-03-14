@@ -1,9 +1,10 @@
-﻿namespace BddStyle.NUnit.Test.Examples.Model.given_setup1.and_sub_setup1;
-
-public abstract class Context : given_setup1.Context
+﻿namespace BddStyle.NUnit.Test.Examples.Model.given_setup1.and_sub_setup1
 {
-    protected override void Arrange()
+    public abstract class Context : given_setup1.Context
     {
-        base.Arrange();
+        protected override void Arrange()
+        {
+            base.Arrange();
+        }
     }
 }

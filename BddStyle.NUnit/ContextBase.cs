@@ -1,20 +1,21 @@
 ﻿using BddStyle.Common;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit;
-
-[TestFixture]
-public abstract class ContextBase : InternalContextBase
+namespace BddStyle.NUnit
 {
-    [SetUp]
-    public void SetUp()
+    [TestFixture]
+    public abstract class ContextBase : InternalContextBase
     {
-        ArrangeAndAct();
-    }
+        [SetUp]
+        public void SetUp()
+        {
+            ArrangeAndAct();
+        }
 
-    [TearDown]
-    public void TearDown()
-    {
-        Cleanup();
+        [TearDown]
+        public void TearDown()
+        {
+            Cleanup();
+        }
     }
 }

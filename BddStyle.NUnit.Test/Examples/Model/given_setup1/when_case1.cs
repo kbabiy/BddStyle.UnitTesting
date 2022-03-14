@@ -1,23 +1,27 @@
 ﻿using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.Model.given_setup1;
-
-public class when_case1 : Context
+namespace BddStyle.NUnit.Test.Examples.Model.given_setup1
 {
-    protected override void Act()
+    public class when_case1 : Context
     {
-        base.Act();
+        protected override void Act()
+        {
+            base.Act();
+        }
+
+        [Test]
+        public void then_validation1()
+        {
+        }
+
+        [Test]
+        public void then_validation2()
+        {
+        }
+
+        [Test]
+        public void then_validation3()
+        {
+        }
     }
-
-    [Test]
-    public void then_validation1()
-    { }
-
-    [Test]
-    public void then_validation2()
-    { }
-
-    [Test]
-    public void then_validation3()
-    { }
 }

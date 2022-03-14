@@ -3,7 +3,6 @@
   <PropertyGroup>
     <IsPackable>false</IsPackable>
     <TargetFramework>net5.0</TargetFramework>
-    <LangVersion>10</LangVersion>
     <Authors>Konstantin Babiy and contributors</Authors>
     <Version>10.0.0</Version>
   </PropertyGroup>

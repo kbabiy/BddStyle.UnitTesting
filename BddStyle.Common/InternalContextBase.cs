@@ -7,58 +7,59 @@ using JetBrains.Annotations;
 [assembly: InternalsVisibleTo("BddStyle.NUnit")]
 [assembly: InternalsVisibleTo("BddStyle.xUnit")]
 
-namespace BddStyle.Common;
-
-#pragma warning disable CS1998
-[UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
-public abstract class InternalContextBase
+namespace BddStyle.Common
 {
-    protected virtual bool SuppressAct => false;
-
-    protected virtual void Arrange()
+#pragma warning disable CS1998
+    [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
+    public abstract class InternalContextBase
     {
-    }
+        protected virtual bool SuppressAct => false;
 
-    protected virtual async Task ArrangeAsync()
-    {
-    }
+        protected virtual void Arrange()
+        {
+        }
 
-    protected virtual void Act()
-    {
-    }
+        protected virtual async Task ArrangeAsync()
+        {
+        }
 
-    protected virtual async Task ActAsync()
-    {
-    }
+        protected virtual void Act()
+        {
+        }
 
-    protected virtual void Cleanup()
-    {
-    }
+        protected virtual async Task ActAsync()
+        {
+        }
 
-    internal void ArrangeAndAct()
-    {
-        Arrange();
-        AsyncHelper.RunSync(ArrangeAsync);
+        protected virtual void Cleanup()
+        {
+        }
 
-        if (SuppressAct) return;
+        internal void ArrangeAndAct()
+        {
+            Arrange();
+            AsyncHelper.RunSync(ArrangeAsync);
 
-        Act();
-        AsyncHelper.RunSync(ActAsync);
-    }
+            if (SuppressAct) return;
 
-        
-    private static class AsyncHelper
-    {
-        private static readonly TaskFactory TaskFactory = new(CancellationToken.None,
-            TaskCreationOptions.None,
-            TaskContinuationOptions.None,
-            TaskScheduler.Default);
+            Act();
+            AsyncHelper.RunSync(ActAsync);
+        }
 
-        internal static void RunSync(Func<Task> func)
-            => TaskFactory
-                .StartNew(func)
-                .Unwrap()
-                .GetAwaiter()
-                .GetResult();
+
+        private static class AsyncHelper
+        {
+            private static readonly TaskFactory TaskFactory = new(CancellationToken.None,
+                TaskCreationOptions.None,
+                TaskContinuationOptions.None,
+                TaskScheduler.Default);
+
+            internal static void RunSync(Func<Task> func)
+                => TaskFactory
+                    .StartNew(func)
+                    .Unwrap()
+                    .GetAwaiter()
+                    .GetResult();
+        }
     }
 }

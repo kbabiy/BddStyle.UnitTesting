@@ -5,30 +5,31 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.given_EventCount.and_increased_once;
-
-public class when_adding_and_decreasing_often : Context
+namespace BddStyle.NUnit.Test.Examples.given_EventCount.and_increased_once
 {
-    [SuppressMessage("ReSharper", "FunctionNeverReturns")]
-    protected override void Act()
+    public class when_adding_and_decreasing_often : Context
     {
-        Task.Factory.StartNew(() =>
-            {
-                while (true)
+        [SuppressMessage("ReSharper", "FunctionNeverReturns")]
+        protected override void Act()
+        {
+            Task.Factory.StartNew(() =>
                 {
-                    Sut.Increase();
-                    Thread.Sleep(100);
-                    Sut.Decrease();
+                    while (true)
+                    {
+                        Sut.Increase();
+                        Thread.Sleep(100);
+                        Sut.Decrease();
+                    }
                 }
-            }
-        );
-    }
+            );
+        }
 
-    [Test]
-    public void then_wait_returns_false_by_timeout()
-    {
-        Timed(TimeSpan.FromSeconds(3),
-                () => Sut.WaitUntil(0, TimeSpan.FromSeconds(1)))
-            .Should().BeFalse();
+        [Test]
+        public void then_wait_returns_false_by_timeout()
+        {
+            Timed(TimeSpan.FromSeconds(3),
+                    () => Sut.WaitUntil(0, TimeSpan.FromSeconds(1)))
+                .Should().BeFalse();
+        }
     }
 }

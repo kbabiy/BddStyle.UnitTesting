@@ -1,10 +1,11 @@
-﻿namespace BddStyle.NUnit.Test.Examples.given_EventCount.and_increased_once;
-
-public abstract class Context : given_EventCount.Context
+﻿namespace BddStyle.NUnit.Test.Examples.given_EventCount.and_increased_once
 {
-    protected override void Arrange()
+    public abstract class Context : given_EventCount.Context
     {
-        base.Arrange();
-        Sut.Increase();
+        protected override void Arrange()
+        {
+            base.Arrange();
+            Sut.Increase();
+        }
     }
 }

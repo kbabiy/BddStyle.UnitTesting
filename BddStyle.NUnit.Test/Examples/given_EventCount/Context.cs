@@ -4,40 +4,39 @@ using System.Linq;
 using System.Threading.Tasks;
 using FluentAssertions;
 
-namespace BddStyle.NUnit.Test.Examples.given_EventCount;
-
-public abstract class Context : ContextBase
+namespace BddStyle.NUnit.Test.Examples.given_EventCount
 {
-    protected const int ThreadCount = 100;
-    protected EventCount Sut;
-    protected override void Arrange()
+    public abstract class Context : ContextBase
     {
-        Sut = new EventCount();
-    }
-        
-    protected Task[] StartIncreases()
-    {
-        return Enumerable.Range(0, ThreadCount).Select(
-            _ => Task.Factory.StartNew(Sut.Increase)).ToArray();
-    }       
-        
-    [SuppressMessage("ReSharper", "UnusedMethodReturnValue.Global")]
-    protected Task[] StartDecreases()
-    {
-        return Enumerable.Range(0, ThreadCount).Select(
-            _ => Task.Factory.StartNew(Sut.Decrease)).ToArray();
-    }
+        protected const int ThreadCount = 100;
+        protected EventCount Sut;
 
-    protected static T Timed<T>(TimeSpan frame, Func<T> action)
-    {
-        var result = default(T);
-        var inTime = Task.Factory.StartNew(() =>
+        protected override void Arrange()
         {
-            return result = action();
-        }).Wait(frame);
+            Sut = new EventCount();
+        }
 
-        inTime.Should().BeTrue("Operation is expected to finish within the time frame");
-            
-        return result;
+        protected Task[] StartIncreases()
+        {
+            return Enumerable.Range(0, ThreadCount).Select(
+                _ => Task.Factory.StartNew(Sut.Increase)).ToArray();
+        }
+
+        [SuppressMessage("ReSharper", "UnusedMethodReturnValue.Global")]
+        protected Task[] StartDecreases()
+        {
+            return Enumerable.Range(0, ThreadCount).Select(
+                _ => Task.Factory.StartNew(Sut.Decrease)).ToArray();
+        }
+
+        protected static T Timed<T>(TimeSpan frame, Func<T> action)
+        {
+            var result = default(T);
+            var inTime = Task.Factory.StartNew(() => { return result = action(); }).Wait(frame);
+
+            inTime.Should().BeTrue("Operation is expected to finish within the time frame");
+
+            return result;
+        }
     }
 }

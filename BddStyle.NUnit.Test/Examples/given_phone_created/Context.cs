@@ -1,13 +1,15 @@
-﻿namespace BddStyle.NUnit.Test.Examples.given_phone_created;
-
-public abstract class Context : ContextBase
+﻿namespace BddStyle.NUnit.Test.Examples.given_phone_created
 {
-    protected Phone Sut;
-    protected const string TestPhoneNumber = "321-123-12";
-    protected const string TestPin = "3365";
 
-    protected override void Arrange()
+    public abstract class Context : ContextBase
     {
-        Sut = new Phone(TestPin);
+        protected Phone Sut;
+        protected const string TestPhoneNumber = "321-123-12";
+        protected const string TestPin = "3365";
+
+        protected override void Arrange()
+        {
+            Sut = new Phone(TestPin);
+        }
     }
 }

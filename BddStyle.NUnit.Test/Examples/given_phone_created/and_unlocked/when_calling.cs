@@ -1,18 +1,19 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
 
-namespace BddStyle.NUnit.Test.Examples.given_phone_created.and_unlocked;
-
-public class when_calling : Context
+namespace BddStyle.NUnit.Test.Examples.given_phone_created.and_unlocked
 {
-    protected override void Act()
+    public class when_calling : Context
     {
-        Sut.Call(TestPhoneNumber);
-    }
+        protected override void Act()
+        {
+            Sut.Call(TestPhoneNumber);
+        }
 
-    [Test]
-    public void then_call_succeeded()
-    {
-        Sut.LastCallSucceeded.Should().BeTrue();
+        [Test]
+        public void then_call_succeeded()
+        {
+            Sut.LastCallSucceeded.Should().BeTrue();
+        }
     }
 }
