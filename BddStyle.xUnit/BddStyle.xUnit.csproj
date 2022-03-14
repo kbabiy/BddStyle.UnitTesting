@@ -5,7 +5,6 @@
     <TargetFramework>net5.0</TargetFramework>
     <Company>none</Company>
     <Authors>Konstantin Babiy and contributors</Authors>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Version>10.0.0</Version>
     <Description>Tooling to empower BDD-style unit testing conventions. R# snippets for easier usage are available by project URL</Description>
     <PackageLicenseUrl>https://github.com/kbabiy/BddStyle.UnitTesting/blob/master/LICENSE.md</PackageLicenseUrl>
