@@ -8,7 +8,6 @@ platform: Any CPU
 before_build:
   - cmd: nuget restore
 build:
-  publish_nuget: true
   verbosity: normal
 test:
   categories:

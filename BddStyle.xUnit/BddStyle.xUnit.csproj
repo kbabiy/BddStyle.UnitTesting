@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <TargetFramework>net6.0</TargetFramework>
     <Company>none</Company>
     <Authors>Konstantin Babiy and contributors</Authors>
