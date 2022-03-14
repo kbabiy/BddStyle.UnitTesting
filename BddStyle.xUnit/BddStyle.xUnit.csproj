@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <IsPackable>true</IsPackable>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>10</LangVersion>
     <Company>none</Company>
     <Authors>Konstantin Babiy and contributors</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
