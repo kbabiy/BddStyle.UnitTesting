@@ -9,7 +9,7 @@ before_build:
   - cmd: nuget restore
 build:
   publish_nuget: true
-  verbosity: detailed
+  verbosity: normal
 test:
   categories:
     only:
