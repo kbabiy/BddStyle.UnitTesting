@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.0</Version>
     <TargetFramework>net6.0</TargetFramework>
     <Company>none</Company>
     <Authors>Konstantin Babiy and contributors</Authors>
